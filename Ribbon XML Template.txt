@@ -1,0 +1,109 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_onLoad">
+       
+	<ribbon startFromScratch="false">
+	
+		<tabs>
+			<tab id="" label="">
+				<group id="" label="">
+					<button id="" 
+					   label="" 
+					   imageMso="" 
+					   size="large" 
+					   onAction="_onClick" />
+
+				</group>
+				
+				
+				<group id="" label="">
+
+				<menu id="" 
+				      label=""
+				      imageMso=""
+				      size="large"
+				      screentip="">
+						
+	
+					<button id="" 
+					   label="" 
+					   imageMso="" 
+					   onAction="_onClick" />			
+						
+				</menu>	
+					
+					<box id="" boxStyle="vertical">
+						<labelControl id="" 
+						   label="" />
+						<dropDown id=""
+						   label=""
+						   sizeString="1234567890"
+							getItemCount="_getItemCount"
+							getItemID="_getItemID"
+							getItemLabel="_getItemLabel"
+							onAction="_onClick" />
+						
+			                       
+						<box id="" boxStyle="horizontal">
+						    <dropDown id=""
+							label="" 
+						   sizeString="1234567890"
+							getItemCount="_getItemCount"
+							getItemID="_getItemID"
+							getItemLabel="_getItemLabel"
+							onAction="_onClick" />
+						
+						
+						<button id="" 
+						   label=""
+						   onAction="_onClick" />
+					      </box>
+					</box>	
+					
+					<separator id="sep1" />
+					
+
+					<dynamicMenu id="" 
+					   label=""
+						imageMso=""
+						size="large"
+						screentip=""
+						getEnabled="_getEnabled"
+					        getContent="ReportMenuBuilder" />
+					
+					<button id=""
+					   label=""
+						imageMso=""
+						size="large"
+						screentip=""
+						onAction="_onClick" />		
+					
+				</group>
+				
+			
+				
+								
+				<group id="grpHelp" label="Help" >
+					<button id="btnAbout" 
+					label="About"
+					imageMso="Info"
+					size="large"
+					onAction="btnAbout_onClick" />
+				</group>
+				
+				
+			</tab>
+		</tabs>
+	</ribbon>
+	
+	<contextMenus>
+		<contextMenu  
+		   idMso="ContextMenuWorkbookPly">
+			   <button enabled="false" 
+				idMso="SheetDelete" 
+				label="Delete..." 
+				showLabel="true" /> 
+		</contextMenu>
+	</contextMenus>
+	
+	
+	
+</customUI>
